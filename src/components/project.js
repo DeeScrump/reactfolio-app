@@ -4,7 +4,7 @@ import '../styles/styles.css';
 export default function Project() {
     return (
     <div className="card rounded-0 border-0 flex-row work pb-4 headmain">
-        <div className="row">
+        {/* <div className="row">
             <div className="card border-0 mb-4 shadowBox m-3">
                     <header className="cardhead" id="first_proj">HMMRD!</header>
                     <a className="border-0 m-0 p-0" href="https://hammereddb.herokuapp.com/" alt="Server Side Station" target="_blank" rel="noreferrer">
@@ -40,7 +40,7 @@ export default function Project() {
                     <header className="cardhead2"><a className="border-0 m-0 p-0" href="https://github.com/joshTlil/project-one.git" alt="Repository" target="_blank" rel="noreferrer">Github Repository</a></header>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
     );   
 }

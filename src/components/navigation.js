@@ -4,7 +4,7 @@ import '../styles/styles.css';
 export default function NavBar({ currentPage, handlePageChange }) {
     return (
         <nav>
-            <ul className="nav nav-tabs link-warning">
+            <ul className="nav nav-tabs link-warning d-flex justify-content-around">
                 <li className="nav-item">
                 <a
                     href="#about"
