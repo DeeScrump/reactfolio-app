@@ -1,55 +1,47 @@
 import React, { useState } from 'react';
-import navBar from './Navigation';
-import footBar from './Footer';
+import NavBar from './Navigation';
+import FootBar from './Footer';
 import Project from './Project';
 
 
 export default function Header() {
-  const [currentPage, setCurrentPage] = useState('AboutMe');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'AboutMe') {
+    if (currentPage === 'About') {
         return (
             <div>
-                {navBar}
-                <h1>About Me</h1>
+                <h1>About</h1>
                 <p>Welcome to my React based Portfolio page.</p>
                 <br></br>
                 <p>I am an Electrical Engineer</p>
-                {footBar}
+                <FootBar />
             </div>
         );
     }
     if (currentPage === 'Portfolio') {
         return (
-            <div>
-                {navBar}
-                <Project />
-                {footBar}
-            </div>
+            <Project />,
+            <FootBar />
         );
     }
-    if (currentPage === 'ContactMe') {
+    if (currentPage === 'Contact') {
         return (
             <div>
-                {navBar}
-                <h1>About Me</h1>
-                <p>Welcome to my React based Portfolio page.</p>
-                <br></br>
-                <p>I am an Electrical Engineer</p>
-                {footBar}
+                <h1>Contact</h1>
+                <form>
+                    <input>Stuff</input>
+                </form>
+                <FootBar />
             </div>
         );
     }
     return (
         <div>
-            {navBar}
-            <h1>About Me</h1>
-            <p>Welcome to my React based Portfolio page.</p>
-            <br></br>
-            <p>I am an Electrical Engineer</p>
-            {footBar}
+            <h1>Resume</h1>
+            <p>Click here for my resume.</p>
+            <FootBar />
         </div>
       );
   };
@@ -59,7 +51,7 @@ export default function Header() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <navBar currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>

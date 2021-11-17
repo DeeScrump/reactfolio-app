@@ -1,18 +1,18 @@
 import React from 'react';
 
-export default function navBar({ currentPage, handlePageChange }) {
+export default function NavBar({ currentPage, handlePageChange }) {
     return (
         <nav>
             <ul className="nav nav-tabs">
                 <li className="nav-item">
                 <a
-                    href="#aboutme"
-                    onClick={() => handlePageChange('AboutMe')}
+                    href="#about"
+                    onClick={() => handlePageChange('About')}
                     // This is a conditional (ternary) operator that checks to see if the current page is "Home"
                     // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-                    className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                 >
-                    About Me
+                    About
                 </a>
                 </li>
                 <li className="nav-item">
@@ -27,12 +27,12 @@ export default function navBar({ currentPage, handlePageChange }) {
                 </li>
                 <li className="nav-item">
                 <a
-                    href="#contactme"
-                    onClick={() => handlePageChange('ContactMe')}
+                    href="#contact"
+                    onClick={() => handlePageChange('Contact')}
                     // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                    className={currentPage === 'ContactMe' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 >
-                    Contact Me
+                    Contact
                 </a>
                 </li>
                 <li className="nav-item">
