@@ -12,10 +12,12 @@ export default function Header() {
     if (currentPage === 'About') {
         return (
             <div>
-                <h1>About</h1>
+                <h1>About Me</h1>
+                <div className="card flex-row">
                 <p>Welcome to my React based Portfolio page.</p>
                 <br></br>
                 <p>I am an Electrical Engineer</p>
+                </div>
                 <FootBar />
             </div>
         );
@@ -29,10 +31,8 @@ export default function Header() {
     if (currentPage === 'Contact') {
         return (
             <div>
-                <h1>Contact</h1>
-                <form>
-                    <input>Stuff</input>
-                </form>
+                <h1>Contact Me</h1>
+                <p>DID THIS SECTION POPULATE</p>
                 <FootBar />
             </div>
         );
