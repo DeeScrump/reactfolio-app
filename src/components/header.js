@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import navbar from './Navigation';
+import navBar from './Navigation';
 import footBar from './Footer';
 import Project from './Project';
 
@@ -12,36 +12,45 @@ export default function Header() {
     if (currentPage === 'AboutMe') {
         return (
             <div>
+                {navBar}
                 <h1>About Me</h1>
                 <p>Welcome to my React based Portfolio page.</p>
                 <br></br>
                 <p>I am an Electrical Engineer</p>
+                {footBar}
             </div>
-            {footBar}
         );
     }
     if (currentPage === 'Portfolio') {
-        return <Project />;
+        return (
+            <div>
+                {navBar}
+                <Project />
+                {footBar}
+            </div>
+        );
     }
     if (currentPage === 'ContactMe') {
         return (
             <div>
+                {navBar}
                 <h1>About Me</h1>
                 <p>Welcome to my React based Portfolio page.</p>
                 <br></br>
                 <p>I am an Electrical Engineer</p>
+                {footBar}
             </div>
-            {footBar}
-          );
+        );
     }
     return (
         <div>
+            {navBar}
             <h1>About Me</h1>
             <p>Welcome to my React based Portfolio page.</p>
             <br></br>
             <p>I am an Electrical Engineer</p>
+            {footBar}
         </div>
-        {footBar}
       );
   };
 
@@ -50,7 +59,7 @@ export default function Header() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <navBar currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>
