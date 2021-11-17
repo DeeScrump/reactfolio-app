@@ -4,7 +4,7 @@ import '../styles/styles.css';
 export default function NavBar({ currentPage, handlePageChange }) {
     return (
         <nav>
-            <ul className="nav nav-tabs">
+            <ul className="nav nav-tabs link-warning">
                 <li className="nav-item">
                 <a
                     href="#about"
@@ -21,7 +21,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
                     href="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
                     // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                    className={currentPage === 'Work' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
                 >
                     Portfolio
                 </a>

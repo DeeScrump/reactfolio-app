@@ -4,6 +4,7 @@ import FootBar from './Footer';
 import Project from './Project';
 import '../styles/styles.css';
 import { validateEmail } from '../utils/helpers';
+import '../assets';
 
 
 export default function Header() {
@@ -122,11 +123,19 @@ export default function Header() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
-      {renderPage()}
+    <div className="card flex-row headmain">
+        <div>
+        <img className="headShot" src={require("../assets/headshot.jpg")} alt="Headshot"></img>
+            <div className="d-flex">
+                <h2>Dwight C Kornbluth II</h2>
+            </div>
+        </div><span>
+        {/* We are passing the currentPage from state and the function to update it */}
+        <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
+        {/* Here we are calling the renderPage method which will return a component  */}
+        {renderPage()}
+        </span>
+
     </div>
   );
 }
