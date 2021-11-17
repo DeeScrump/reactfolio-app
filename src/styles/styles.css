@@ -1,0 +1,57 @@
+/* Set up some basic variables to resuse */
+:Root {
+    --trim: gold;
+    --bgcolor: darkolivegreen;
+    --border: lime;
+}
+
+body div div a {
+    padding: 10px;
+}
+
+/* Flexes h2 headers over repeating background image*/
+/* .bgImage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 800;
+    font-size: xxx-large;
+    color:gold;
+    height: 360px;
+    margin: 0;
+    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
+    background-position: left;
+} */
+
+/* reduce size of the image */
+.headShot {
+    max-width: 20rem;
+}
+
+/* Set main header to flex */
+.headmain {
+    background-image: linear-gradient(to bottom, darkolivegreen, yellow, darkolivegreen);
+}
+
+/* header card to be placed in each work content section, absolute to the relative card itself */
+.cardhead {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 2.5%;
+    background-color: var(--trim);
+}
+
+.cardhead2 {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 2.5%;
+    background-color: var(--border);
+}
+/* created pseudo properties to add box shadows and highlight cards as the mouse hovers */
+.shadowBox:hover {
+    box-shadow: 10px 5px 5px var(--trim);
+    filter: alpha(opacity=80);
+    opacity: .8; 
+}

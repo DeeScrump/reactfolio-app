@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from './Navigation';
 import FootBar from './Footer';
 import Project from './Project';
+import '../styles/styles.css';
 
 
 export default function Header() {
