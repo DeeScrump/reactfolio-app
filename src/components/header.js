@@ -4,7 +4,6 @@ import FootBar from './Footer';
 import Project from './Project';
 import '../styles/styles.css';
 import { validateEmail } from '../utils/helpers';
-import '../assets';
 
 
 export default function Header() {
@@ -125,7 +124,7 @@ export default function Header() {
   return (
     <div className="card flex-row headmain">
         <div>
-        <img className="headShot" src={require("../assets/headshot.jpg")} alt="Headshot"></img>
+        <img className="headShot" src={require('../assets/headshot.png')} alt="Headshot"></img>
             <div className="d-flex">
                 <h2>Dwight C Kornbluth II</h2>
             </div>
