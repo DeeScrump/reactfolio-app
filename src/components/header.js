@@ -25,8 +25,11 @@ export default function Header() {
     }
     if (currentPage === 'Portfolio') {
         return (
-            <Project />,
-            <FootBar />
+            <div>
+                <h1>Portfolio</h1>
+                <Project />,
+                <FootBar />
+            </div>
         );
     }
     if (currentPage === 'Contact') {
