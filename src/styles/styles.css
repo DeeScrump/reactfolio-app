@@ -13,7 +13,7 @@ body div div a {
 .bgImage {
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-end;
     font-weight: bolder;
     font-size: large;
     color:gold;

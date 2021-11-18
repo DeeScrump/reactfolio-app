@@ -20,7 +20,7 @@ export default function Header() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, we set the state of either email, name, and textarea
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -34,12 +34,12 @@ export default function Header() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    // First we check to see if the email is not valid or if the email is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !name) {
       setErrorMessage('Email or Name is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+      // Then we check to see if the name is not valid. If so, we set an error message regarding the name.
     }
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -78,24 +78,28 @@ export default function Header() {
         return (
             <div>
                 <h1>Contact Me</h1>
-                <form className="form">
-                    <input
+
+                <form className="form-control bg-transparent border-0">
+                    <p className="m-0">Name: </p>
+                    <input className='input-group'
                     value={name}
                     name="Name:"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder="username"
+                    placeholder="Name"
                     />
                     <br></br>
-                    <input
+                    <p>Email: </p>
+                    <input className='input-group'
                     value={email}
                     name="email"
                     onChange={handleInputChange}
                     type="email"
-                    placeholder="email"
+                    placeholder="Email"
                     />
                     <br></br>
-                    <textarea
+                    <p>Description: </p>                    
+                    <textarea className='input-group'
                     value={textArea}
                     name="text"
                     onChange={handleInputChange}
@@ -117,7 +121,7 @@ export default function Header() {
     return (
         <div>
             <h1>Resume</h1>
-            <p>Download My Resume: <a className="nav-item fw-bolder fs-4 link-light" target="_blank" rel="noreferrer" href={resume}>Click Here</a></p>
+            <p>Call or Download My Resume: <a className="nav-item fw-bolder fs-4 link-light" target="_blank" rel="noreferrer" href={resume}>click 352.871.4481</a></p>
             <h3>Front-End Proficiencies:</h3>
             <ul>            
                 <li>
