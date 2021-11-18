@@ -5,6 +5,7 @@ import Project from './Project';
 import '../styles/styles.css';
 import { validateEmail } from '../utils/helpers';
 import headShot from '../assets/headshot.jpg'
+import resume from '../assets/resume.pdf';
 
 
 export default function Header() {
@@ -116,7 +117,65 @@ export default function Header() {
     return (
         <div>
             <h1>Resume</h1>
-            <p>Input my Resume Here</p>
+            <p>Download My Resume: <a className="nav-item fw-bolder fs-4 link-light" target="_blank" rel="noreferrer" href={resume}>Click Here</a></p>
+            <h3>Front-End Proficiencies:</h3>
+            <ul>            
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    JavaScript
+                </li>
+                <li>
+                    JQuery
+                </li>
+                <li>
+                    Github
+                </li>
+                <li>
+                    React
+                </li>
+                <li>
+                    NPM
+                </li>
+                <li>
+                    Bootstrap
+                </li>
+            </ul>
+
+            <h3>Back-End Proficiencies:</h3>
+            <ul>            
+                <li>
+                    JavaScript
+                </li>
+                <li>
+                    Nodejs
+                </li>
+                <li>
+                    Expressjs
+                </li>
+                <li>
+                    Postman
+                </li>
+                <li>
+                    Insomnia
+                </li>
+                <li>
+                    MySQL
+                </li>
+                <li>
+                    Mongodb
+                </li>
+                <li>
+                    Heroku
+                </li>
+                <li>
+                    Visual Studio
+                </li>
+            </ul>
             <FootBar />
         </div>
       );
@@ -128,7 +187,7 @@ export default function Header() {
     <div className="container headmain">
 
         <div className="d-flex flex-column text-center">
-            <h1>Dwight C Kornbluth II</h1>
+            <h1 className="text-light">Dwight C Kornbluth II</h1>
             <div><img className="headShot p-2" src={headShot} alt="Headshot" /></div>
         </div>
 
