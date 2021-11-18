@@ -53,10 +53,12 @@ export default function Header() {
         return (
             <div>
                 <h1>About Me</h1>
-                <div className="card flex-row">
-                <p>Welcome to my React based Portfolio page.</p>
+                <div className="card bg-transparent border-0 text-wrap">
+                <p>Welcome to my React based Portfolio page.  My name is Dwight C Kornbluth II, born of a Bahamian father, and American mother in the beautiful city of Miami.  </p>
                 <br></br>
-                <p>I am an Electrical Engineer</p>
+                <p>I am an Electrical Engineer from the University of Florida, go Gators!  I worked in the utiltiy industry with NextEra Energy and Florida Power & Light, Co. for over 12 years.  The last eight of those years were in upper managemente.</p>
+                <br></br>
+                <p>Recently, I have relocated to Atlanta, GA as it was a better location for my new larger family.  I wanted to transition into work that allows freedom of Remote working, so I am now a Certified Full Stack Web Developer!</p>
                 </div>
                 <FootBar />
             </div>

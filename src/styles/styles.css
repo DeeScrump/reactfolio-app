@@ -10,18 +10,23 @@ body div div a {
 }
 
 /* Flexes h2 headers over repeating background image*/
-/* .bgImage {
+.bgImage {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-weight: 800;
-    font-size: xxx-large;
+    justify-content: space-around;
+    align-items: end;
+    font-weight: bolder;
+    font-size: large;
     color:gold;
+    padding-bottom: 2rem;
     height: 360px;
     margin: 0;
-    background-image: url("../images/tennis\ bg.jpg"); alt: "tennis themed background";
+    background-image: url("../assets/tennisbg.jpg"); alt: "tennis themed background";
     background-position: left;
-} */
+}
+
+.iconImage {
+    height: 5rem;
+}
 
 /* reduce size of the image */
 .headShot {
@@ -47,7 +52,8 @@ body div div a {
     display: flex;
     bottom: 10%;
     right: 2.5%;
-    background-color: var(--border);
+    font-weight: bolder;
+    /* background-color: var(--bgcolor); */
 }
 /* created pseudo properties to add box shadows and highlight cards as the mouse hovers */
 .shadowBox:hover {
