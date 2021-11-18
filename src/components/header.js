@@ -80,7 +80,7 @@ export default function Header() {
                 <h1>Contact Me</h1>
 
                 <form className="form-control bg-transparent border-0">
-                    <p className="m-0">Name: </p>
+                    <p>Name: </p>
                     <input className='input-group'
                     value={name}
                     name="Name:"
