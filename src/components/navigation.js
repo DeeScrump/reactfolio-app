@@ -4,14 +4,14 @@ import '../styles/styles.css';
 export default function NavBar({ currentPage, handlePageChange }) {
     return (
         <nav>
-            <ul className="nav nav-tabs link-warning d-flex justify-content-around">
+            <ul className="nav nav-tabs d-flex justify-content-around">
                 <li className="nav-item">
                 <a
                     href="#about"
                     onClick={() => handlePageChange('About')}
                     // This is a conditional (ternary) operator that checks to see if the current page is "Home"
                     // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'About' ? 'nav-link active link-warning' : 'nav-link link-warning'}
                 >
                     About Me
                 </a>
@@ -21,7 +21,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
                     href="#portfolio"
                     onClick={() => handlePageChange('Portfolio')}
                     // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'Portfolio' ? 'nav-link active link-warning' : 'nav-link link-warning'}
                 >
                     Portfolio
                 </a>
@@ -31,7 +31,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
                     href="#contact"
                     onClick={() => handlePageChange('Contact')}
                     // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'Contact' ? 'nav-link active link-warning' : 'nav-link link-warning'}
                 >
                     Contact Me
                 </a>
@@ -41,7 +41,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
                     href="#resume"
                     onClick={() => handlePageChange('Resume')}
                     // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'Resume' ? 'nav-link active link-warning' : 'nav-link link-warning'}
                 >
                     Resume
                 </a>

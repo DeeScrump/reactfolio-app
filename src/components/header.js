@@ -127,7 +127,7 @@ export default function Header() {
 
         <div className="d-flex flex-column text-center">
             <h1>Dwight C Kornbluth II</h1>
-            <div><img className="headShot" src={headShot} alt="Headshot" /></div>
+            <div><img className="headShot p-2" src={headShot} alt="Headshot" /></div>
         </div>
 
         {/* We are passing the currentPage from state and the function to update it */}
